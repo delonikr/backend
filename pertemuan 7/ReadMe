@@ -1,0 +1,32 @@
+// untuk menjalankan install cors dengan perintah : npm install cors
+
+// membuat mysql
+// -- 1. Buat database (jika belum ada)
+// CREATE DATABASE IF NOT EXISTS nama_database;
+
+// -- 2. Gunakan database
+// USE nama_database;
+
+// -- 3. Buat tabel user
+// CREATE TABLE IF NOT EXISTS user (
+//   id INT AUTO_INCREMENT PRIMARY KEY,
+//   nama VARCHAR(100) NOT NULL,
+//   phone VARCHAR(20),
+//   email VARCHAR(100) UNIQUE NOT NULL,
+//   password VARCHAR(255) NOT NULL,
+//   role ENUM('admin', 'user') DEFAULT 'user',
+//   created_at DATETIME DEFAULT CURRENT_TIMESTAMP
+// );
+
+// menampilkan di postman
+// GET : http://localhost:3000/user
+// POST : {
+//   "nama": "Delonik",
+//   "phone": "081234567890",
+//   "email": "delonikr@gmail.com",
+//   "password": "rahasia123",
+//   "role": "user",
+//   "created_at": "2025-05-10 10:00:00"
+// }
+// PUT : http://localhost:3000/user/1 // ganti sesuai id
+// DELETE : http://localhost:3000/user/1 // hapus sesuai id
